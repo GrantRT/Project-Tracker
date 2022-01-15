@@ -3,16 +3,18 @@
 // handle displaying the time
 function displayTime() {
   // TODO (Task 1.1): Calculate and output the time to the appropriate element
+  setInterval(function () {
+    $('#current-time').html(moment().format('MMM, DD, YYYY, h:mm:ss'));
+  }, 1000);
 }
+
+displayTime();
 
 // handle printing project data to the page
 function printProjectData(name, type, hourlyRate, dueDate) {
   // TODO (Task 3.2): Create a new row
-
   // TODO (Task 3.3 & 3.4): Create a table detail (<td>) element for each of the table columns created in Task 1.
-
   // TODO (Task 3.6): Append the new columns to the new row, then append the row to the DOM
-
   // TODO (Task 3.7): Close the modal
 }
 
